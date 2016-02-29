@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Media Queries</title>
+<style>
+
+*{
+  box-sizing: border-box;
+  padding:10;
+}
+/********** Base styles **********/
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  border: 1px solid black;
+  margin-bottom: 15px;
+  height: 200px;
+  background-color: #00FFFF
+}
+#p4{
+  position: absolute;
+  top: 0;
+  left:0;
+}
+#p5{
+  position:absolute;
+  top:0
+  left:100;
+}
+#p6{
+  position:absolute
+  top:0
+  right:0;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  #p1 {
+    width: 33.33%;
+    float:left;
+    margin right: 15px;
+  }
+  #p2 {
+    width: 33.33%;
+    float:left;
+  
+  }
+  #p3{
+    width:33.3%;
+    float:left;g
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #p1 {
+    width: 50%;
+    float:left;
+    padding: 10px;
+  }
+  #p2 {
+    width: 50%;
+    float: left;
+
+  }
+  #p3{
+    width:100%;
+    float:left;
+  }
+  @media (max-width: 767px) {
+  #p1 {
+    width: 100%;
+  }
+  #p2 {
+    width: 100%;
+  }
+  #p3{
+    width:100%;
+  }
+  body {
+    background-color: blue;
+  }
+}
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+
+<p id="p1"> A common domesticated fowl (Gallus domesticus) widely raised for meat and eggs and believed to be descended from the jungle fowl G. gallus.</p>
+<p id="p2">A full-grown steer, bull, ox, or cow, especially one intended for use as meat.</p>
+<p id="p3">Cold cooked rice dressed with vinegar that is shaped into pieces and topped with raw or cooked fish, or formed into a roll with fish, egg, or vegetables and often wrapped in seaweed.</p>
+<p id="p4">Chicken</p>
+<p id="p5">Beef</p>
+<p id="p6">Sush</p>
+
+</body>
+</html>
